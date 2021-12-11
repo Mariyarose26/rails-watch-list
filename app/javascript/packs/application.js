@@ -19,8 +19,11 @@ import { initStarRating } from './plugins/init_star_rating';
 
 
 document.addEventListener('turbolinks:load', () => {
-  initSelect2();
   initTyped();
   AOS.init();
   initStarRating();
+});
+
+document.addEventListener('turbolinks:load', () => {
+  initSelect2();
 });
